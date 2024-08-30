@@ -1,0 +1,146 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2.5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        section {
+            padding: 60px 20px;
+            margin: 20px;
+        }
+        section#about {
+            background-color: #f4f4f4;
+            background-size: cover;
+            background-position: center;
+            color: #aa1212;
+        }
+        section#services {
+            background-color: #e2e2e2;
+	    background: image url #e2e2e2;;
+        }
+        button {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {background-color: #feb47b;
+        }
+        .service {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin: 10px;
+        }
+        .service img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 200px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our services</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header><section id="about">
+        <h2>About Us</h2>
+        <p>we bring over 16 years of experience in this field.our dedication to excellence has allowed us to thrive and innovate in this space.</p>
+        <button>Read More</button>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="WhatsApp Image 2024-08-28 at 19.26.04.jpeg" alt="Service 1">
+            <p>User Experience</p>
+        </div>
+        <div class="service">
+            <img src="WhatsApp Image 2024-08-28 at 19.25.43.jpeg" alt="Service 2">
+            <p>Creative Design</p>
+        </div>
+        <div class="service">
+            <img src="WhatsApp Image 2024-08-28 at 19.25.25.jpeg" alt="Service 3">
+            <p>Retina Ready</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:xyz@example.com">mahammadyunus78@gmail.com</a></p>
+    </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 mahmad yunus. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
